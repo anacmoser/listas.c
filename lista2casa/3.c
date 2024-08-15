@@ -1,17 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
 int main(){
     float n, nvn;
     printf("digite a nota:");
     scanf("%f", &n);
-    if(n%1!=0){
-        if(n>0.5){
-        int n;
-        nvn=n+1;
-        }
+    if(n - (int)n >= 0.5){
+        nvn=(int)n+1;
+        
     }
     else{
-        int n;
-        nvn=n;
+        nvn=(int)n;
     }
-    printf("%f", nvn);
+    printf("%.0f", nvn);
+    system ("pause");
 }
